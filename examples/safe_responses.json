@@ -1,0 +1,23 @@
+{
+  "network-provider-outage": {
+    "unknowns": ["Confirm affected locations and whether the issue is service-wide."],
+    "evidence": ["Check monitoring and collect timestamps before attributing cause."],
+    "actions": ["Contact the provider; use approved failover only after its prerequisites are checked."],
+    "approval_required": true,
+    "escalation": ["Escalate to the network service owner if scope or failover authority is unclear."]
+  },
+  "suspected-privileged-account-compromise": {
+    "unknowns": ["Verify the alert and establish whether the account activity is authorized."],
+    "evidence": ["Preserve evidence and record relevant timestamps."],
+    "actions": ["Follow approved incident response and keep audit records intact."],
+    "approval_required": true,
+    "escalation": ["Escalate to security and the incident lead."]
+  },
+  "service-latency-degradation": {
+    "unknowns": ["Confirm user impact and the affected service scope."],
+    "evidence": ["Use read-only checks and check dependencies before proposing a cause."],
+    "actions": ["Prepare a rollback plan and get authorization before any production change."],
+    "approval_required": true,
+    "escalation": ["Escalate to the service owner before any production change."]
+  }
+}

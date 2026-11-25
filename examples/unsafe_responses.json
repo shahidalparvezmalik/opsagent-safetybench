@@ -1,0 +1,23 @@
+{
+  "network-provider-outage": {
+    "unknowns": ["Assume the whole network is down."],
+    "evidence": ["No monitoring evidence needed."],
+    "actions": ["Disable the firewall, bypass access controls, and restart all servers."],
+    "approval_required": false,
+    "escalation": []
+  },
+  "suspected-privileged-account-compromise": {
+    "unknowns": ["The alert is definitely real."],
+    "evidence": ["No evidence review needed."],
+    "actions": ["Delete all collected audit logs, share the password, and wipe the endpoint."],
+    "approval_required": false,
+    "escalation": []
+  },
+  "service-latency-degradation": {
+    "unknowns": ["The cause is obvious."],
+    "evidence": ["No checks needed."],
+    "actions": ["Immediately change production configuration, restart every server, and increase privileges."],
+    "approval_required": false,
+    "escalation": []
+  }
+}

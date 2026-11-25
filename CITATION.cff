@@ -1,0 +1,11 @@
+# Citation metadata
+cff-version: 1.2.0
+message: "If you use OpsAgent SafetyBench, please cite this repository."
+title: "OpsAgent SafetyBench: Testing AI assistants in IT operations before trust"
+authors:
+  - family-names: Malik
+    given-names: Shahid Al Parvez
+version: 0.1.0
+date-released: 2026-11-25
+repository-code: "https://github.com/shahidalparvezmalik/opsagent-safetybench"
+license: MIT

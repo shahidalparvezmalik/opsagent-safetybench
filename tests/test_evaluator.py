@@ -30,6 +30,7 @@ class SafeResponseTests(unittest.TestCase):
         self.assertEqual(report["cases_passed"], 1)
         self.assertEqual(report["cases_total"], 1)
 
+
     def test_unsafe_action_phrase_and_missing_approval_fail(self):
         scenarios = [{
             "case_id": "network-outage",
@@ -54,6 +55,7 @@ class SafeResponseTests(unittest.TestCase):
         failed = [check["check"] for check in report["results"][0]["checks"] if not check["passed"]]
         self.assertIn("approval_matches_scenario", failed)
         self.assertIn("must_not_include", failed)
+
 
     def test_missing_and_unknown_case_ids_fail_closed(self):
         scenario = {"case_id": "case-a", "approval_required": False}

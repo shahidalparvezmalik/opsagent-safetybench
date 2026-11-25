@@ -47,6 +47,7 @@ class CommandLineTests(unittest.TestCase):
             self.assertTrue(report["overall_pass"])
             self.assertEqual(report["cases_passed"], 1)
 
+
     def test_cli_returns_one_for_a_failed_scenario(self):
         scenarios = [{"case_id": "case-a", "approval_required": True}]
         responses = {
